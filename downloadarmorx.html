@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Download ARMORX</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #00ff00;
+        }
+
+        header {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+       .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 50px;
+        }
+
+       .card {
+            background-color: #333;
+            border: none;
+            border-radius: 10px;
+            padding: 30px;
+            width: 350px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 40px;
+            transition: all 0.3s ease;
+        }
+
+       .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+       .card h2 {
+            color: #00ff00;
+            margin-bottom: 20px;
+        }
+
+       .card p {
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+       .download-button {
+            background-color: limegreen;
+            color: #000;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+       .download-button:hover {
+            background-color: #00cc00;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section, navigation bar -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="ARMORX-logo.jpg" alt="ARMORX System Logo" style="max-height: 40px; vertical-align: middle;">
+        </a>
+        <div id="hamburger-menu">≡</div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Business</a></li>
+                <li><a href="training.html">Training Courses</a></li>
+                <li><a href="armorx.html">ARMORX Penetration Testing Platform</a></li>
+                <li><a href="index.html#config">Service Configuration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Download ARMORX</h1>
+    <div class="card-container">
+        <div class="card">
+            <h2>Mobile Version</h2>
+            <p>The ARMORX version for mobile devices safeguards your security anytime and anywhere.</p>
+            <a href="buildarmorxing.html" class="download-button">Download</a>
+        </div>
+        <div class="card">
+            <h2>Desktop Version</h2>
+            <p>The ARMORX version for desktop computers provides powerful security detection functions.</p>
+            <a href="buildarmorxing.html" class="download-button">Download</a>
+        </div>
+        <div class="card">
+            <h2>ARM Version</h2>
+            <p>The ARMORX version optimized for ARM architecture devices runs efficiently.</p>
+            <a href="buildarmorxing.html" class="download-button">Download</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function () {
+            const mainNav = document.getElementById('main-nav');
+            if (mainNav.style.display === 'block') {
+                mainNav.style.display = 'none';
+            } else {
+                mainNav.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>

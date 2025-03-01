@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shark Security - ARMORX Penetration Testing Platform</title>
+    <style>
+        /* Added animation effects */
+       .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Hover effect for features */
+       .feature-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px limegreen;
+        }
+
+        /* Button loading animation */
+       .btn.loading {
+            position: relative;
+            pointer-events: none;
+        }
+
+       .btn.loading::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(0, 0, 0, 0.3);
+            border-top-color: limegreen;
+            border-radius: 50%;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Media section styles */
+       .media-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+       .media-section video {
+            width: 80%;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+
+       .media-section img {
+            width: 48%;
+            max-width: 400px;
+            margin: 10px;
+            object-fit: contain;
+        }
+
+        /* Blog section styles */
+       .blog-section {
+            padding: 50px;
+        }
+
+       .blog-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border: 1px solid limegreen;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+       .blog-item h3 {
+            margin-top: 0;
+        }
+
+       .blog-item p {
+            margin-bottom: 0;
+        }
+
+       .blog-item a {
+            text-decoration: none;
+            color: limegreen;
+        }
+
+       .blog-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Logo display styles */
+       .logo-display {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+       .logo-display img {
+            max-height: 80px;
+            vertical-align: middle;
+        }
+
+       .header-logo {
+            max-height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section, reusable from index.html -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="ARMORX-logo.jpg" alt="ARMORX System Logo" class="header-logo">
+        </a>
+        <div id="hamburger-menu">≡</div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="training.html">Training Courses</a></li>
+                <li><a href="index.html#armorx">ARMORX Penetration Testing Platform</a></li>
+                <li><a href="index.html#config">Service Configuration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ARMORX content section -->
+    <main>
+        <section class="armorx-intro fade-in">
+            <div class="logo-display">
+                <img src="ARMORX-logo.jpg" alt="ARMORX System Logo">
+            </div>
+            <h1>ARMORX Penetration Testing Platform</h1>
+            <p>ARMORX is our self-developed professional penetration testing platform, focusing on simulating hacker attacks. Through advanced technical methods, it deeply detects system vulnerabilities, providing reliable network security detection services for enterprises and institutions, helping users identify and prevent potential security risks in advance.</p>
+        </section>
+
+        <section class="features fade-in">
+            <h2>Core Features</h2>
+            <div class="feature-item">
+                <h3>Powerful Simulation Attack Capability</h3>
+                <p>Capable of simulating various complex hacker attacks, covering the network layer, application layer, and different operating systems, accurately locating system weaknesses to ensure comprehensive security detection.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Rapid and Accurate Vulnerability Detection</h3>
+                <p>Utilizing advanced algorithms to quickly identify common and complex vulnerabilities, deeply analyzing and providing detailed reports to help users understand the security status of their systems.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Comprehensive and Understandable Report Generation</h3>
+                <p>After completing the detection, a comprehensive report is generated, including details of vulnerabilities and repair suggestions, providing strong support for security decision-making and improving the overall security level.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Excellent Portability</h3>
+                <p>The ARMORX platform is designed to be lightweight and resource-efficient, whether on devices with limited resources or in complex network environments, it can be easily deployed and run, always meeting your security detection needs.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Wide Compatibility</h3>
+                <p>Supports multiple mainstream operating systems, including Windows, Linux, macOS, etc., and can run stably on different hardware platforms, seamlessly adapting to your work environment.</p>
+            </div>
+        </section>
+
+        <section class="media-section fade-in">
+            <h2>Demo Video and Interface Showcase</h2>
+            <video controls autoplay muted>
+                <source src="demo_video.mp4" type="video/mp4">
+            </video>
+            <img src="desktop.jpg" alt="Desktop Interface Display">
+            <img src="mobile.jpg" alt="Mobile Interface Display">
+        </section>
+
+        <section class="blog-section fade-in">
+            <div class="logo-display">
+                <img src="ARMORX-logo.jpg" alt="ARMORX System Logo">
+            </div>
+            <h2>Related Blogs</h2>
+            <div class="blog-item">
+                <div>
+                    <h3><a href="blog1.html">Deep Dive into ARMORX's Simulation Attack Technology</a></h3>
+                    <p>In this blog, we will detail how ARMORX simulates various complex hacker attacks, helping you better utilize the platform for security detection.</p>
+                </div>
+            </div>
+            <div class="blog-item">
+                <div>
+                    <h3><a href="blog2.html">ARMORX Vulnerability Detection Case Studies</a></h3>
+                    <p>Through actual cases, we showcase ARMORX's powerful capabilities in vulnerability detection and how it helps enterprises solve security issues.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-studies fade-in">
+            <h2>Success Stories</h2>
+            <div class="case-item">
+                <h3>Case 1: Network Security Reinforcement for a Large Enterprise</h3>
+                <p>The ARMORX platform helped a large enterprise simulate hacker attacks, discovering and repairing several critical vulnerabilities, effectively enhancing the enterprise's network security protection capabilities and ensuring the stable operation of the enterprise's business.</p>
+                <p>In this project, the ARMORX platform simulated various hacker attack methods, discovering multiple high-risk vulnerabilities in the enterprise's network architecture. Through close cooperation with the enterprise's security team, timely formulation and implementation of repair plans successfully resisted potential security threats.</p>
+            </div>
+            <div class="case-item">
+                <h3>Case 2: Security Assessment for Financial Institutions</h3>
+                <p>Conducting a comprehensive simulated hacker attack test for a financial institution, the ARMORX platform accurately identified potential risk points, assisting it in improving its security system and enhancing the security of customer data.</p>
+                <p>In response to the strict security requirements of financial institutions, the ARMORX platform conducted a full range of penetration tests. By simulating hackers attacking core business systems and customer data, a series of security vulnerabilities were discovered. During the subsequent security rectification process, ARMORX provided professional technical support to ensure the effective improvement of the financial institution's security system.</p>
+            </div>
+        </section>
+
+        <section class="download-section fade-in">
+            <h2>Download ARMORX</h2>
+            <p>Click the link below to download the ARMORX platform:</p>
+            <a href="downloadarmorx.html" class="btn" id="downloadButton">Download Now</a>
+            <p id="downloadMessage" style="display:none;">The download link is being generated, please wait...</p>
+        </section>
+
+    </main>
+
+    <!-- Footer section, reusable from index.html -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Resource Center</a>
+            <a href="#">Blog</a>
+        </div>
+        <p>&copy; 2025 Shark Security Services Limited. All rights reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function () {
+            const mainNav = document.getElementById('main-nav');
+            if (mainNav.style.display === 'block') {
+                mainNav.style.display = 'none';
+            } else {
+                mainNav.style.display = 'block';
+            }
+        });
+
+        document.getElementById('downloadButton').addEventListener('click', function () {
+            this.classList.add('loading');
+            document.getElementById('downloadMessage').style.display = 'block';
+            // Here you can add the actual logic for generating the download link or redirecting to the download page
+            setTimeout(() => {
+                this.classList.remove('loading');
+                document.getElementById('downloadMessage').style.display = 'none';
+            }, 3000);
+        });
+    </script>
+</body>
+
+</html>

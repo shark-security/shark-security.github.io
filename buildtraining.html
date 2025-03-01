@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000;
+            color: limegreen;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        #date {
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+
+        #encouragement {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Building Course</h1>
+    <p id="date"></p>
+    <p id="encouragement"></p>
+
+    <script>
+        // Get the current date
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+        const day = String(today.getDate()).padStart(2, '0');
+        const formattedDate = `${year}-${month}-${day}`;
+        document.getElementById('date').textContent = `Today is: ${formattedDate}`;
+
+        // Array of random encouragement messages
+        const encouragements = [
+            "Every wait is an accumulation of growth, hold on, the course will amaze you!",
+            "Be patient, the dawn of victory is just ahead, the course construction is worth the wait!",
+            "Waiting is for a better departure, the course's brilliance is about to begin!",
+            "A temporary wait is for infinite possibilities in the future, the course is cheering up!",
+            "Accumulate strength in waiting, the course will bring an unprecedented feast of knowledge!"
+        ];
+
+        // Randomly select an encouragement message
+        const randomIndex = Math.floor(Math.random() * encouragements.length);
+        document.getElementById('encouragement').textContent = encouragements[randomIndex];
+    </script>
+
+</body>
+
+</html>

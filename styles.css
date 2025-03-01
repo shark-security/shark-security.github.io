@@ -1,0 +1,328 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: limegreen;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: limegreen;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* 头部样式 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#main-nav {
+    display: none;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* 通用按钮样式 */
+.btn {
+    display: inline-block;
+    background-color: limegreen;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+}
+
+/* 横幅区域样式 */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-text {
+    text-align: center;
+    padding: 50px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: limegreen;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 业务板块样式 */
+.split-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-personal,
+.button-organization {
+    background-color: transparent;
+    color: limegreen;
+    border: 1px solid limegreen;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-personal:hover,
+.button-organization:hover {
+    background-color: limegreen;
+    color: black;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    margin-bottom: 20px;
+}
+
+/* 培训板块样式 */
+.training-levels {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.training-level {
+    border: 1px solid limegreen;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+/* ARMORX页面样式 */
+.armorx-intro {
+    text-align: center;
+    padding: 50px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.feature-item {
+    border: 1px solid limegreen;
+    padding: 15px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.feature-item img {
+    max-width: 100px;
+    height: auto;
+}
+
+.case-studies {
+    padding: 20px;
+}
+
+.case-item {
+    border: 1px solid limegreen;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.pricing {
+    text-align: center;
+    padding: 20px;
+}
+
+.pricing-item {
+    border: 1px solid limegreen;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 服务配置样式 */
+.config-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.config-item {
+    border: 1px solid limegreen;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+/* 专家评价样式 */
+.testimonials {
+    text-align: center;
+}
+
+.testimonial-item {
+    border: 1px solid limegreen;
+    padding: 15px;
+    margin: 10px;
+}
+
+.testimonial-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* 最新动态样式 */
+.news {
+    text-align: center;
+}
+
+.news-item {
+    border: 1px solid limegreen;
+    padding: 15px;
+    margin: 10px;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: darkgreen;
+}
+
+.subscribe input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* 证书展示板块样式 */
+.certificate-section {
+    text-align: center;
+    padding: 30px;
+}
+
+.certificate-image img {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    border: 5px solid limegreen;
+    padding: 15px;
+}
+
+.certificate-benefits {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.certificate-benefits li {
+    background-color: rgba(34, 139, 34, 0.2);
+    border: 1px solid limegreen;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* 培训页面的样式 */
+.training-intro {
+    text-align: center;
+    padding: 50px;
+}
+
+.course-list {
+    padding: 0 20px;
+}
+
+.course-item {
+    border: 1px solid limegreen;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* 响应式设计 - 桌面端 */
+@media (min-width: 768px) {
+    #hamburger-menu {
+        display: none;
+    }
+
+    #main-nav {
+        display: block;
+    }
+}
+
